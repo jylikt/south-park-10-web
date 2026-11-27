@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#11151b" />
+    <link rel="icon" type="image/png" href="./game/i.png" />
+    <title>South Park 10 — Browser Edition</title>
+    <script type="module" crossorigin src="./assets/index-DRQN9lhr.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CkAaQ4TC.css">
+  </head>
+  <body>
+    <main id="app">
+      <header>
+        <div>
+          <p class="eyebrow">J2ME ARCHIVE · 240 × 320</p>
+          <h1>South Park <span>10</span></h1>
+        </div>
+        <div class="header-actions">
+          <button id="sound" type="button" aria-label="Включить звук">Звук: выкл.</button>
+          <button id="fullscreen" type="button">Во весь экран</button>
+        </div>
+      </header>
+      <section class="game-layout">
+        <div class="screen-column">
+          <div id="screen-shell" class="screen-shell">
+            <canvas id="screen" width="240" height="320" aria-label="Экран игры South Park 10"></canvas>
+            <div id="loading" class="loading"><strong>Загрузка архива…</strong><span id="loading-detail">Подготовка J2ME runtime</span></div>
+          </div>
+          <p class="hint"><kbd>WASD</kbd> / <kbd>стрелки</kbd> — движение · <kbd>Enter</kbd> — действие · <kbd>Q</kbd> / <kbd>E</kbd> — soft keys</p>
+        </div>
+        <aside class="controls" aria-label="Сенсорное управление">
+          <div class="soft-controls">
+            <button data-key="-6" class="soft">L</button>
+            <span>SOFT KEYS</span>
+            <button data-key="-7" class="soft">R</button>
+          </div>
+          <div class="dpad">
+            <button data-key="-1" class="up" aria-label="Вверх">▲</button>
+            <button data-key="-3" class="left" aria-label="Влево">◀</button>
+            <button data-key="-5" class="fire" aria-label="Действие">OK</button>
+            <button data-key="-4" class="right" aria-label="Вправо">▶</button>
+            <button data-key="-2" class="down" aria-label="Вниз">▼</button>
+          </div>
+          <div class="number-pad">
+            <button data-key="49">1</button><button data-key="50">2</button><button data-key="51">3</button>
+            <button data-key="52">4</button><button data-key="53">5</button><button data-key="54">6</button>
+            <button data-key="55">7</button><button data-key="56">8</button><button data-key="57">9</button>
+            <button data-key="42">*</button><button data-key="48">0</button><button data-key="35">#</button>
+          </div>
+        </aside>
+      </section>
+      <footer>Оригинальные игровые данные · браузерный Canvas · прогресс сохраняется на устройстве</footer>
+    </main>
+  </body>
+</html>
